@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Project Management System</h1>
+
+<div class="container">
+    <h2>Create New Project</h2>
+
+    <form id="projectForm">
+        <input id="projectName" placeholder="Project Name" required>
+
+        <input id="manager" placeholder="Project Manager" required>
+
+        <textarea id="description" placeholder="Project Description" required></textarea>
+
+        <input id="startDate" type="date" required>
+
+        <input id="endDate" type="date" required>
+
+        <button type="submit">Add Project</button>
+    </form>
+</div>
+
+<h2>Project Details</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Project Name</th>
+            <th>Manager</th>
+            <th>Description</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Status</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+
+    <tbody id="projectList"></tbody>
+</table>
+
+<script src="script.js"></script>
+
+</body>
+</html>
